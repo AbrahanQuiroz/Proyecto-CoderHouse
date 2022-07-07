@@ -101,6 +101,7 @@ const pintarFooter = () => {
         footer.innerHTML = `
         <th scope="row" colspan="5">Carrito vacío con innerHTML</th>
         `
+        
         return
     }
 
@@ -118,7 +119,12 @@ const pintarFooter = () => {
     btnVaciar.addEventListener('click', () => {
         carrito = {}
         pintarCarrito()
+        Swal.fire({
+            title: "Carrito Vacio",
+            icon: "warning"
+        })
     })
+   
 }
 
 const btnAccion = e =>{
@@ -143,3 +149,4 @@ const btnAccion = e =>{
 
     e.stopPropagation()
 }
+
