@@ -76,6 +76,58 @@
     </div>
   </template>
 
+  <div class="container my-5 text-center">
+    <button class="btn btn-danger w-100" onclick="traer()">OBTENER</button>
+    <div class="mt-5" >
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">nombre</th>
+            <th scope="col">precio</th>
+            <th scope="col">lugar</th>
+          </tr>
+        </thead>
+        <tbody id="contenido">
+         
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+  <script>
+    
+    var contenido = document.querySelector('#contenido')
+
+     function traer(){
+      fetch('api.json')
+      .then( res => res.json())
+      .then( datos => {
+        // console.log(datos)
+        tabla(datos)
+      })
+     }
+
+     function tabla(datos) {
+      contenido.innerHTML = ''
+      for(let valor of datos) {
+      contenido.innerHTML +=  `
+      <tr>
+            <th scope="row"> ${valor.id} </th>
+            <td>${valor.title}</td>
+            <td>${valor.precio}</td>
+            <td>${valor.estado ? "Activo" : "Eliminado"}</td>
+          </tr>
+      `
+      }
+      
+     }
+
+
+
+  </script>
+
 
  
   <script src="./practicando.js"></script>
