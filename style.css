@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+   background: url(/img/fondo.png) no-repeat;
+   background-size: cover;
+    background-position: center;
+}
+
+
+
+
+li, a, button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.nav__links{
+    list-style: none;
+
+}
+
+.nav__links li{
+    display: inline-block;
+    padding: 0px 20px;
+
+}
+
+.nav__links li a{
+    transition: all 0.3s ease 0s;
+}
+.nav__links li a:hover{
+    color: #0088a9
+}
+
+button{
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: rgba(0,136,169,0.8);
+}
+
+section{
+    min-height: 100vh;
+    padding: 0 9%;
+    padding-top: 7.5rem;
+    padding-bottom: 2rem;
+
+}
+
+.bbttnn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    border-radius: 5rem;
+    background: rgba(0, 136, 169, 1);
+
+}
+
+.inicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: url(/img/fondo.png) no-repeat; */
+    background-size: cover;
+    background-position: center;
+}
+
+.inicio .image img{
+    width: 15vw;
+    animation: float 3s linear infinite;
+
+}
+@keyframes float{
+    0%, 100%{
+        transform: translateY(0rem);
+    }
+    50%{
+        transform:translateY(-3.5rem)
+    }
+}
+
+.inicio .content h3{
+    font-size: 5.5rem;
+    color: #edf0f1;
+    text-transform: capitalize;
+}
+
+.inicio .content h3 span{
+    color: rgba(0,136,169,0.8);
+    text-transform: capitalize;
+}
+
+.inicio .content p{
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 1rem 0;
+
+}
+
+th{
+    color: #fff;
+}
+
+td{
+    color: #fff;
+}
+
+h1{
+    color: #fff;
+}

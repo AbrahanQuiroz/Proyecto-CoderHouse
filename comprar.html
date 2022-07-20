@@ -4,13 +4,28 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Carrito de prueba para proyecto!</title>
+<title>Aezelion</title>
+
 <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="style.css">
+
+
 </head>
 <body>
-
+  <header>
+    <nav>
+        <ul class="nav__links">
+            <li> <a href="home.html">Home </a> </li>
+            <li> <a href="#">Nosotros</a> </li>
+            <li> <a href="comprar.html">Comprar</a> </li>
+        </ul>
+    </nav>
+    <a href="#" class="cta"> <button>Contacto</button></a>
+        </header>
+    
   <div class="container">
-    <h1>Carrito</h1>
+    <h1>Bienvenido!</h1>
     <hr>
 
     <table class="table">
@@ -76,61 +91,10 @@
     </div>
   </template>
 
-  <div class="container my-5 text-center">
-    <button class="btn btn-danger w-100" onclick="traer()">OBTENER</button>
-    <div class="mt-5" >
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">nombre</th>
-            <th scope="col">precio</th>
-            <th scope="col">lugar</th>
-          </tr>
-        </thead>
-        <tbody id="contenido">
-         
-        </tbody>
-      </table>
-    </div>
-
-  </div>
-
-  <script>
-    
-    var contenido = document.querySelector('#contenido')
-
-     function traer(){
-      fetch('api.json')
-      .then( res => res.json())
-      .then( datos => {
-        // console.log(datos)
-        tabla(datos)
-      })
-     }
-
-     function tabla(datos) {
-      contenido.innerHTML = ''
-      for(let valor of datos) {
-      contenido.innerHTML +=  `
-      <tr>
-            <th scope="row"> ${valor.id} </th>
-            <td>${valor.title}</td>
-            <td>${valor.precio}</td>
-            <td>${valor.estado ? "Activo" : "Eliminado"}</td>
-          </tr>
-      `
-      }
-      
-     }
-
-
-
-  </script>
 
 
  
-  <script src="./practicando.js"></script>
+  <script src="./Index.js"></script>
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="/sweetAlert.js"></script>
 </body>

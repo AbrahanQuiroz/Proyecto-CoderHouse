@@ -1,44 +1,44 @@
 [
   {
-    "precio": 500,
+    "precio": 2000,
     "id": 1,
-    "title": "Café",
-    "thumbnailUrl": "https://picsum.photos/id/0/600",
+    "title": "T-500 Smart Watch",
+    "thumbnailUrl": "https://cdn.shopify.com/s/files/1/0596/3078/0584/products/Imagen10_580x.png?v=1653920794",
     "estado" : true
   },
   {
-    "precio": 300,
+    "precio": 3500,
     "id": 2,
-    "title": "Pizza",
-    "thumbnailUrl": "https://picsum.photos/id/10/600",
+    "title": "M26 Plus Gold Edition",
+    "thumbnailUrl": "https://stylewatch.vtexassets.com/arquivos/ids/205012-1200-auto?width=1200&height=auto&aspect=true",
     "estado" : true
   },
   {
-    "precio": 100,
+    "precio": 4000,
     "id": 3,
-    "title": "Agua",
-    "thumbnailUrl": "https://picsum.photos/id/20/600",
+    "title": "NT-16 Rosa",
+    "thumbnailUrl": "https://images.fravega.com/f500/5ed5744b1bd83b01cd8b99bef6da84e1.jpg",
     "estado" : true
   },
   {
-    "precio": 50,
+    "precio": 10000,
     "id": 4,
-    "title": "Sandía",
-    "thumbnailUrl": "https://picsum.photos/id/30/600",
+    "title": "Amazfit T-REX",
+    "thumbnailUrl": "https://stylewatch.vtexassets.com/arquivos/ids/181582-500-auto?v=637360355238470000&width=500&height=auto&aspect=true",
     "estado" : false
   },
   {
-    "precio": 10,
+    "precio": 3500,
     "id": 5,
-    "title": "Mango",
-    "thumbnailUrl": "https://picsum.photos/id/40/600",
+    "title": "N-13 Basic",
+    "thumbnailUrl": "https://cf.shopee.com.ar/file/6acfe851e2ad036ffc1f869e1c031a67",
     "estado" : false
   },
   {
-    "precio": 150,
+    "precio": 1500,
     "id": 6,
-    "title": "Chela",
-    "thumbnailUrl": "https://picsum.photos/id/50/600",
+    "title": "Sport Watch",
+    "thumbnailUrl": "https://images.fravega.com/f500/691562891b1febc3e2817765bd80bade.jpg",
     "estado" : true
   }
 ]

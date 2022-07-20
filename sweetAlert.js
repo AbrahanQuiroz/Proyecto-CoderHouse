@@ -17,5 +17,5 @@ const Toast = Swal.mixin({
   Toast.fire({
     icon: 'success',
     text: "puedes empezar a comprar!",
-    title: 'Bienvenido a mi pagina web'
+    title: 'Bienvenido a Aezelion'
   })
