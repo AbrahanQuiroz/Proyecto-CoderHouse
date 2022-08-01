@@ -10,8 +10,8 @@
 body{
    background: url(/img/fondo.png) no-repeat;
    background-size: cover;
-   background-position: center;
-   background-attachment: fixed;
+    background-position: center;
+  
 }
 
 
@@ -45,6 +45,8 @@ header{
 
 .nav__links li a{
     transition: all 0.3s ease 0s;
+    font-size: 25px;
+    
 }
 .nav__links li a:hover{
     color: #0088a9
@@ -71,6 +73,12 @@ section{
 
 }
 
+.secSobreMi{
+    padding: 100px;
+    margin: 30px;
+
+}
+
 .bbttnn{
     display: inline-block;
     margin-top: 1rem;
@@ -84,6 +92,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
+    /* background: url(/img/fondo.png) no-repeat; */
     background-size: cover;
     background-position: center;
 }
@@ -104,7 +113,7 @@ section{
 
 .inicio .content h3{
     font-size: 5.5rem;
-    color: #0088a9;
+    color: #edf0f1;
     text-transform: capitalize;
 }
 
@@ -132,4 +141,25 @@ h1{
     color: #fff;
 }
 
+h2{
+    font-size: 30px;
+    padding: 30px;
+    
+}
 
+.sobreMi{
+    font-size: 30px;
+    color: #fff;
+    margin: auto;
+   
+}
+
+
+.uSobreMi li{
+    margin: 50px;
+    font-size: 20px;
+}
+
+.cono{
+    color: aquamarine;
+}

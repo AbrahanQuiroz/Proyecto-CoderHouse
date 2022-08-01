@@ -29,7 +29,7 @@ const fetchData = async() => {
         // console.log(data)
         pintarCards(data)
     } catch (error) {
-        console.log(error)
+        // console.log(error)
     }
 }
 
@@ -73,7 +73,6 @@ pintarCarrito()
 
  }
 const pintarCarrito = () => {
-    // console.log(carrito)
     items.innerHTML =''
     Object.values(carrito).forEach(producto => {
         templateCarrito.querySelector('th').textContent = producto.id
@@ -149,4 +148,3 @@ const btnAccion = e =>{
 
     e.stopPropagation()
 }
-
